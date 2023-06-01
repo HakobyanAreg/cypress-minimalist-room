@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.cursor__pointer {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  text-shadow: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+//Padding
+
+.p-default {
+  padding: 0 120px;
+
+  @media (max-width: 768px) {
+    padding: 0 40px;
+  }
+}
+
+// Font family
+
+h1, h2, h3, h4, h5, h6, a, span, p, input, button, li {
+  font-family: 'Poppins', sans-serif;
+}

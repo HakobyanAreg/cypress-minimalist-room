@@ -1,0 +1,57 @@
+<footer class="footer p-default">
+  <div class="footer__title__wrapper">
+    <div class="footer__title-logo__wrapper">
+      <img src="assets/images/logo.svg" alt="Dananz Logo" class="footer__title-logo">
+    </div>
+    <div class="footer__title">
+      <h2 class="footer__title-text">
+        One of the best furniture agency.
+      </h2>
+    </div>
+  </div>
+  <div class="footer__contact__wrapper">
+    <div class="footer__contact-title__wrapper">
+      <span class="footer__contact-title">
+        Enter your email to get the laterst news
+      </span>
+    </div>
+    <div class="footer__contact-input__wrapper">
+      <input type="email" placeholder="Email Address" class="footer__contact-input" [formControl]="email">
+      <img class="footer__contact-input-arrow" src="assets/icons/arrow.svg" alt="Arrow Icon">
+    </div>
+    <div class="error__wrapper" *ngIf="email.invalid">
+      <span class="error">Please write valid email address</span>
+    </div>
+    <div class="footer__contact-social-icons__wrapper">
+      <div class="footer__contact-social-icons__list__wrapper d-flex">
+        <div class="footer__contact-social-icons__list-title__wrapper">
+          <span class="footer__contact-social-icons__title">
+          Follow Us On
+          </span>
+        </div>
+        <ul class="footer__contact-social-icons__list">
+          <li class="footer__contact-social-icons__list-item">
+            <a href="#" class="footer__contact-social-icons__link">
+              <img src="assets/icons/facebook.svg" alt="Facebook Icon" class="footer__contact-social-icons">
+            </a>
+          </li>
+          <li class="footer__contact-social-icons__list-item">
+            <a href="#" class="footer__contact-social-icons__link">
+              <img src="assets/icons/instagram.svg" alt="Instagram Icon" class="footer__contact-social-icons">
+            </a>
+          </li>
+          <li class="footer__contact-social-icons__list-item">
+            <a href="#" class="footer__contact-social-icons__link">
+              <img src="assets/icons/tiktok.svg" alt="Tiktok Icon" class="footer__contact-social-icons">
+            </a>
+          </li>
+          <li class="footer__contact-social-icons__list-item">
+            <a href="#" class="footer__contact-social-icons__link">
+              <img src="assets/icons/youtube.svg" alt="Youtube Icon" class="footer__contact-social-icons">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

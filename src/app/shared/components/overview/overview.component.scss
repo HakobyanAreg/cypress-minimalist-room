@@ -1,0 +1,17 @@
+.overview__wrapper {
+  gap: 32px;
+  margin-top: 100px;
+
+  .overview {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .overview__wrapper {
+    flex-direction: column;
+    margin-top: 30px;
+
+  }
+}

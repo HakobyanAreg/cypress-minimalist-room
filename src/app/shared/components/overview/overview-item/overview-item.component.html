@@ -1,0 +1,24 @@
+<div class="overview__item__wrapper d-flex">
+  <div class="overview__item-title__wrapper">
+    <p class="overview__item__title">
+      {{data.title}}
+    </p>
+  </div>
+  <div class="overview__item__description__wrapper d-flex">
+    <div class="overview__item__description d-flex">
+      <ng-container *ngFor="let desc of data.descriptions">
+        <p class="overview__item__description-text">
+          {{desc}}
+        </p>
+      </ng-container>
+    </div>
+    <div class="overview__item-info__wrapper d-flex" *ngIf="!!data.date && !!data.author">
+      <span class="overview__item-date overview__item-info" *ngIf="!!data.date">
+        {{data.date}}
+      </span>
+      <span class="overview__item-author overview__item-info" *ngIf="!!data.author">
+        {{data.author}}
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="images__wrapper d-flex">
+  <ng-container *ngFor="let src of imagesSrc" class="image__wrapper">
+  <div class="image__wrapper" [class.w-100]="imagesSrc.length === 1">
+    <img [src]="src" alt="Image" class="img">
+  </div>
+  </ng-container>
+</div>
+
+<div class="slider__wrapper">
+  <div class="slider d-flex">
+    <div class="slides-container" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+      <div class="slide" *ngFor="let image of imagesSrc">
+        <img [src]="image" alt="Slide">
+      </div>
+    </div>
+  </div>
+  <div class="slider__actions__wrapper d-flex" *ngIf="imagesSrc.length > 1">
+    <button class="slider__action" (click)="prevSlide()">
+      Previous
+    </button>
+    <button class="slider__action" (click)="nextSlide()">
+      Next
+    </button>
+  </div>
+</div>

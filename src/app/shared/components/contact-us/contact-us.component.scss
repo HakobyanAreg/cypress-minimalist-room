@@ -1,0 +1,128 @@
+.contact__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  gap: 155px;
+  padding: 38px 120px;
+  margin-top: 100px;
+  background: #2C3878;
+
+  .contact-us__title__wrapper {
+
+    .contact-us__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 170%;
+      color: #fff;
+    }
+  }
+
+  .contact-us__action__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    .contact-us__action-title__wrapper {
+
+      .contact-us__action-title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #D9D9D9;
+      }
+    }
+
+    .contact-us__action-btn__wrapper {
+
+    }
+  }
+}
+
+
+@media (max-width: 1220px) {
+  .contact__wrapper {
+
+    .contact-us__title__wrapper {
+
+      .contact-us__title {
+          font-size: 24px;
+      }
+    }
+
+    .contact-us__action__wrapper {
+
+
+      .contact-us__action-title__wrapper {
+
+        .contact-us__action-title {
+          font-size: 14px;
+        }
+      }
+
+      .contact-us__action-btn__wrapper {
+
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact__wrapper {
+    flex-direction: column;
+    gap: 30px;
+
+    .contact-us__title__wrapper {
+      width: 100%;
+
+      .contact-us__title {
+          font-size: 24px;
+      }
+    }
+
+    .contact-us__action__wrapper {
+      width: 100%;
+
+      .contact-us__action-title__wrapper {
+
+        .contact-us__action-title {
+          font-size: 14px;
+        }
+      }
+
+      .contact-us__action-btn__wrapper {
+
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contact__wrapper {
+    padding: 38px 40px;
+  }
+}
+@media (max-width: 425px) {
+  .contact__wrapper {
+
+    .contact-us__title__wrapper {
+
+      .contact-us__title {
+          font-size: 18px;
+      }
+    }
+
+    .contact-us__action__wrapper {
+
+      .contact-us__action-title__wrapper {
+
+        .contact-us__action-title {
+          font-size: 12px;
+        }
+      }
+
+      .contact-us__action-btn__wrapper {
+
+      }
+    }
+  }
+}
